@@ -27,7 +27,7 @@ group :development do
 end
 
 group :test do
-  # gem 'email_spec'
+  gem 'email_spec'
   gem 'rspec'
   gem "database_cleaner"
   gem 'spork'

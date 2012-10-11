@@ -16,6 +16,9 @@ Spork.prefork do
   Dir[ Rails.root.join("app/lib/**/*.rb") ].each { |f| require f }
 
   RSpec.configure do |config|
+    config.include(EmailSpec::Helpers)
+    config.include(EmailSpec::Matchers)
+      
     config.mock_with :rspec
     config.debug = false
 
