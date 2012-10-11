@@ -4,6 +4,9 @@ namespace :mail do
     bundle exec rake mail:send
   DESC
   task send: :environment do
-    Notifier.welcome.deliver
+    # Notifier.welcome.deliver # sends the email
+    mail = Notifier.welcome # => a Mail::Message object
+    puts mail.body
+    mail.deliver   
   end
 end

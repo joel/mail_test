@@ -1,6 +1,11 @@
 class Notifier < ActionMailer::Base
   default from:        ENV['FROM'],
           return_path: ENV['RETURN_PATH']
+          # ,
+          # mime_version: '1.0',
+          # charset: 'UTF-8',
+          # content_type: 'text/plain',
+          # parts_order: [ 'text/plain', 'text/enriched', 'text/html' ]
 
     def welcome
       mail(
