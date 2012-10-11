@@ -71,8 +71,6 @@ module MailTest
       g.fixture_replacement :factory_girl, :dir => "spec/factories"
     end
     
-    config.action_mailer.delivery_method      = :postmark
-    config.action_mailer.postmark_settings    = { api_key: ENV['POSTMARK_API_KEY'] }
     config.action_mailer.default_url_options  = { host: ENV['HOST'] }
   end
 end
