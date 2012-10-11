@@ -78,6 +78,13 @@ GEM
     mime-types (1.19)
     multi_json (1.3.6)
     polyglot (0.3.3)
+    postmark (0.9.13)
+      json
+      rake
+    postmark-rails (0.4.1)
+      actionmailer
+      postmark (>= 0.9.0)
+      rake
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -152,6 +159,7 @@ DEPENDENCIES
   guard-rspec
   guard-spork
   jquery-rails
+  postmark-rails
   rails (= 3.2.8)
   rb-fsevent
   rspec

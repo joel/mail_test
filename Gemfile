@@ -9,6 +9,7 @@ gem 'jquery-rails'
 # gem 'resque'
 # gem 'resque_mailer'
 # gem 'premailer-rails3'
+gem 'postmark-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -19,6 +20,7 @@ end
 group :development, :test do
   gem 'dotenv'
 end
+
 group :development do
   # gem 'mailcatcher'
   gem "rspec-rails"
